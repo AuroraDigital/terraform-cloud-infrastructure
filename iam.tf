@@ -1,7 +1,7 @@
 resource "aws_iam_user" "user" {
   name = "user"
   tags = {
-    Terraform = true
+    Terraform = "true"
   }
 }
 
