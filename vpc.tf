@@ -21,7 +21,7 @@ module "vpc" {
 resource "aws_cloud9_environment_ec2" "dev" {
   instance_type = "t2.micro"
   name          = "cloud9-dev"
-  subnet_id     = module.vpc.private_subnets[0]
+  subnet_id     = module.vpc.public_subnets[0]
   tags = {
     Terraform = "true"
     Environment = "dev"
